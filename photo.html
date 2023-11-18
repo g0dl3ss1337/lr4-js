@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Google Search - Photo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style_photo.css">
+    <script src="scripts/script-photo.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="main.html" onclick="confirmNavigation()">Головна</a>
+            <a href="advanced.html" onclick="confirmNavigation()">Розширений пошук</a>
+        </nav>
+    </header>
+    <main>
+        <div class="search-container">
+            <img src="img/logo.png">
+            <p>Картинки</p>
+            <form action="https://www.google.com/search" method="get" onsubmit="return validateSearch()">
+                <input type="text" name="q">
+                <input type="hidden" name="tbm" value="isch">
+                <input type="submit" value="Пошук">
+            </form>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Розширений пошук Google</title>
+    <link rel="stylesheet" href="styles/style_advanced.css">
+    <script src="scripts/script-advanced.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="main.html" onclick="confirmNavigation()">Головна</a>
+            <a href="photo.html" onclick="confirmNavigation()">Картинки</a>
+        </nav>
+    </header>
+    <main>
+        <div class="search-container">
+            <img src="img/logo.png">
+            <form action="https://www.google.com/search" method="get" onsubmit="return validateSearch()">
+                <label for="as_q">Знайти сторінки із… «усіма цими словами»:</label>
+                <input type="text" id="as_q" name="as_q">
+        
+                <label for="as_epq">Знайти сторінки з… «саме цим словом або фразою»:</label>
+                <input type="text" id="as_epq" name="as_epq">
+        
+                <label for="as_oq">Знайти сторінки з… «будь-яким із цих слів»:</label>
+                <input type="text" id="as_oq" name="as_oq">
+        
+                <label for="as_eq">Знайти сторінки з… «жодне з цих слів»:</label>
+                <input type="text" id="as_eq" name="as_eq">
+        
+                <input type="submit" value="Розширений пошук">
+            </form>
+        </div>
+    </main>
+</body>
+</html>
